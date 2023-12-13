@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{%block title%}
+Meal Item
+{%endblock%}
+
+{%block content%}
+<section class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {%for meal in categories%}
+        <div class="col">
+            <div class="card">
+              <img src="{{meal.strCategoryThumb}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{meal.strCategory}}</h5>
+                <h5 class="card-title">Product Id : {{meal.idCategory}}</h5>
+                <p class="card-text">{{meal.strCategoryDescription|truncatewords:10}}</p>
+              </div>
+            </div>
+          </div>
+        {%endfor meal%}
+</section>
+{%endblock%}

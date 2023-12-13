@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{%block title%}
+About Us
+{%endblock%}
+
+{%block content%}
+ <section class="container my-5">
+    <h1 class="text-center">About us</h1>
+    <div class="row my-5">
+        <div class="col-md-6">
+            <img src="{% static "images/img1.jpeg" %}"class="w-100" alt="Restaurant img">
+        </div>
+        <div class="col-md-6">
+            <div class="mt-5">
+                 <h1>Jolbar Restaurant<h1>
+                 <p class="about-us-dec">At Jolbari, we believe in crafting more than just meals; 
+                    we curate experiences that linger on your palate and in your memories.
+                     Nestled in [Jashore/Khulna], Jolbari is a culinary haven where passion meets flavor,
+                      and every bite tells a story.</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+{%endblock%}
